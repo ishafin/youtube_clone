@@ -1,0 +1,129 @@
+.sidebar{
+  position: fixed;
+  left: 10px ;
+  bottom: 0;
+  top: 55px;
+  background-color: rgb(15,15,15);
+  width: 210px;
+  padding-top: 10px;
+  padding-right:10px;
+  color: white;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.sidebar:hover{
+  scrollbar-color: rgb(100, 100, 100) transparent;
+}
+
+.sidebar::-webkit-scrollbar{
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background: rgb(100, 100, 100);
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar_home{
+  display: flex;
+  align-items: center;
+  padding: 10px 24px;
+  border-radius: 10px;
+  background-color: rgb(39,39,39);
+}
+
+.sidebar_home:hover{
+  background-color: rgb(60, 60, 60) ;
+}
+
+.sidebar_item{
+   display: flex;
+   align-items: center;
+   padding: 10px 24px;
+   cursor: pointer;
+}
+
+.sidebar_item:hover{
+  background-color:rgb(39,39,39);
+  border-radius: 10px;
+}
+
+.sidebar_icon{
+  width:24px;
+  height:24px;
+  margin-right: 24px;
+}
+
+.sidebar_text{
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex:1;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.sidebar_divider{
+  border: none;
+  margin: 10px 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(39, 39, 39);
+}
+
+.sidebar_you{
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(241, 241, 241);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.sidebar_you:hover{
+  background-color:rgb(39,39,39);
+  border-radius: 10px;
+}
+
+.arrow{
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.channel_icon {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar_item.channel {
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.sidebar_title {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  padding: 10px 24px 6px 24px;
+  letter-spacing: 1px;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  opacity: 1;
+}

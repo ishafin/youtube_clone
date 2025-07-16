@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/filter.css">
+  <link rel="stylesheet" href="styles/media_query.css">
+
+  <title>YouTube</title>
+  <link rel="icon" type="image/png" href="images/icon/youtube_favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="left_section">
+
+      <label for="sidebar_toggle" class="menu_div">
+        <img class="menu" src="images/icon/menu.svg">
+      </label>
+
+      <div class="youtube_logo_div">
+        <img class="youtube_logo" src="images/icon/youtube_logo.svg">
+        <span class="yt_location">IN</span>
+      </div>
+    </div>
+    <div class="middle_section">
+
+      <input class="search_bar" type="text" placeholder="Search">
+      <button class="search_button">
+        <img class="search_img" src="images/icon/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <button class="mic_button">
+        <img class="mic_img" src="images/icon/mic.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right_section">
+      <button class="create_button">
+        <img class="create_img" src="images/icon/create.svg">
+        <span class="create_text">Create</span>
+      </button>
+      <div class="notification_div">
+        <img class="notification_img" src="images/icon/notification.svg">
+        <div class="tooltip">Notifications</div>
+        <div class="notifications_count">
+          9&plus;
+        </div>
+      </div>
+      <img class="shafin_img" src="images/profile_images/shafin.jpg">
+    </div>
+
+  </header>
+
+  <nav class="filter_bar">
+    <div class="filter_all">All</div>
+    <div class="filter">Computer programming</div>
+    <div class="filter">Podcasts</div>
+    <div class="filter">Music</div>
+    <div class="filter">Study Skills</div>
+    <div class="filter">Film criticism</div>
+    <div class="filter">Gaming</div>
+    <div class="filter">Universities</div>
+    <div class="filter">Live</div>
+    <div class="filter">Comedy</div>
+    <div class="filter">Recently uploaded</div>
+    <div class="filter">Watched</div>
+    <div class="filter">New to you</div>
+  </nav>
+
+  <nav class="sidebar">
+    <div class="sidebar_home">
+      <img class="sidebar_icon" src="images/sidebar/home.svg">
+      <div class="sidebar_text">Home</div>
+    </div>
+    <div class="sidebar_item">
+      <img class="sidebar_icon" src="images/sidebar/shorts.svg">
+      <div class="sidebar_text">Shorts</div>
+    </div>
+    <div class="sidebar_item">
+      <img class="sidebar_icon" src="images/sidebar/subscriptions.svg">
+      <div class="sidebar_text">Subscriptions</div>
+    </div>
+    <hr class="sidebar_divider">
+
+    <div class="sidebar_you">
+      You
+      <img class="arrow" src="images/sidebar/you_arrow.svg">
+    </div>
+    <div class="sidebar_item">
+      <img class="sidebar_icon" src="images/sidebar/history.svg">
+      <div class="sidebar_text">History</div>
+    </div>
+    <div class="sidebar_item">
+      <img class="sidebar_icon" src="images/sidebar/playlist.svg">
+      <div class="sidebar_text">Playlist</div>
+    </div>
+    <div class="sidebar_item">
+      <img class="sidebar_icon" src="images/sidebar/your_videos.svg">
+      <div class="sidebar_text">Your videos</div>
+    </div>
+    <div class="sidebar_item">
+      <img class="sidebar_icon" src="images/sidebar/your_movies.svg">
+      <div class="sidebar_text">Your movies</div>
+    </div>
+    <div class="sidebar_item">
+      <img class="sidebar_icon" src="images/sidebar/your_courses.svg">
+      <div class="sidebar_text">Your courses</div>
+    </div>
+    <div class="sidebar_item">
+      <img class="sidebar_icon" src="images/sidebar/your_podcast.svg">
+      <div class="sidebar_text">Your podcast</div>
+    </div>
+    <div class="sidebar_item">
+      <img class="sidebar_icon" src="images/sidebar/watch_later.svg">
+      <div class="sidebar_text">Watch later</div>
+    </div>
+    <div class="sidebar_item">
+      <img class="sidebar_icon" src="images/sidebar/liked_videos.svg">
+      <div class="sidebar_text">Liked videos</div>
+    </div>
+
+    <hr class="sidebar_divider">
+
+    <div class="sidebar_title">
+      Subscriptions
+    </div>
+
+    <div class="sidebar_item channel">
+      <img class="sidebar_icon channel_icon" src="images/profile_images/fraz.jpg">
+      <div class="sidebar_text">Fraz</div>
+    </div>
+
+    <div class="sidebar_item channel">
+      <img class="sidebar_icon channel_icon" src="images/profile_images/100xdevs.jpg">
+      <div class="sidebar_text">100xDevs</div>
+    </div>
+
+    <div class="sidebar_item channel">
+      <img class="sidebar_icon channel_icon" src="images/profile_images/codewitharry.jpg">
+      <div class="sidebar_text">CodewithHarry</div>
+    </div>
+
+    <div class="sidebar_item channel">
+      <img class="sidebar_icon channel_icon" src="images/profile_images/supersimpledev.jpg">
+      <div class="sidebar_text">SuperSimpleDev</div>
+    </div>
+
+    <div class="sidebar_item channel">
+      <img class="sidebar_icon channel_icon" src="images/profile_images/takeuforward.jpg">
+      <div class="sidebar_text">take U forward</div>
+    </div>
+
+    <div class="sidebar_item channel">
+      <img class="sidebar_icon channel_icon" src="images/profile_images/freecodecamp.jpg">
+      <div class="sidebar_text">freeCodeCamp.org</div>
+    </div>
+
+    <div class="sidebar_item channel">
+      <img class="sidebar_icon channel_icon" src="images/profile_images/sheryians.jpg">
+      <div class="sidebar_text">Sheryians Coding School</div>
+    </div>
+
+    <div class="sidebar_item channel">
+      <img class="sidebar_icon channel_icon" src="images/profile_images/harkirat.jpg">
+      <div class="sidebar_text">Harkirat Singh</div>
+    </div>
+
+    <div class="sidebar_item channel">
+      <img class="sidebar_icon channel_icon" src="images/profile_images/hitesh.jpg">
+      <div class="sidebar_text">Hitesh Choudhary</div>
+    </div>
+
+    <div class="sidebar_item channel">
+      <img class="sidebar_icon channel_icon" src="images/profile_images/piyush_garg.jpg">
+      <div class="sidebar_text">Piyush Garg</div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="video_grid">
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/G3e-cpL7ofc?si=MFHlVLJD4Ei9DtO7">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/htmlcss.avif">
+            <div class="video_time">
+              6:31:24
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/supersimpledev.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                HTML & CSS Full Course - Beginner to Pro
+              </p>
+
+              <p class="channel">
+                SuperSimpleDev
+              </p>
+
+              <p class="views">
+                15M views &#183; 3 years ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/fp6MP9vN4Fo?si=RYkGTtvcfZAL40Aj">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/bca_google.avif">
+            <div class="video_time">
+              52:25
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/fraz.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                BCA to Google | Step by Step Guide
+              </p>
+
+              <p class="channel">
+                Fraz
+              </p>
+
+              <p class="views">
+                121K views &#183; 6 months ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/gMt3F7hKjPo?si=OL4kSmZENfgobAKJ">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/ai_era.avif">
+            <div class="video_time">
+              17:51
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/codewitharry.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                Will AI replace Software Developers?
+              </p>
+
+              <p class="channel">
+                CodewithHarry
+              </p>
+
+              <p class="views">
+                268K views &#183; 4 months ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/OD_hu70kNW4?si=n6ZdYDnHmRzadWPL">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/bca_amazon.avif">
+            <div class="video_time">
+              44:33
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/fraz.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                BCA to Amazon | Got into Amazon without MCA
+              </p>
+
+              <p class="channel">
+                Fraz
+              </p>
+
+              <p class="views">
+                1M views &#183; 1 year ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/0bHoB32fuj0?si=BQ0CQSWT-ILKAvrC">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/a2z_dsa.avif">
+            <div class="video_time">
+              8:24
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/takeuforward.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                Don't watch my A2Z DSA Course
+              </p>
+
+              <p class="channel">
+                take U forward
+              </p>
+
+              <p class="views">
+                1.6M Views &#183; 1 year ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/GFV2zSJDdVY?si=Ta8ZBiwksCEuIsyo">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/bca_remote.avif">
+            <div class="video_time">
+              14:03
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/100xdevs.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                BCA to Remote Internship - How I did it | 100xdevs Success Stories
+              </p>
+
+              <p class="channel">
+                100xDevs
+              </p>
+
+              <p class="views">
+                48K views &#183; 11 months ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/x4rFhThSX04?si=q2U6t4mHdA0wEysD">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/react.webp">
+            <div class="video_time">
+              15:40:54
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/freecodecamp.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                Learn React JS - Full Beginner's Tutorial & Practice Projects
+              </p>
+
+              <p class="channel">
+                freeCodeCamp.org
+              </p>
+
+              <p class="views">
+                689k views &#183; 7 month ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/a-wVHL0lpb0?si=2pbLl4mJl9X0zgAr">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/javascript_sheryians.avif">
+            <div class="video_time">
+              8:04:12
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/sheryians.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                JavaScript Full Course | JavaScript - Learn Everything | Sheryians Coding School
+              </p>
+
+              <p class="channel">
+                Sheryians Coding School
+              </p>
+
+              <p class="views">
+                181K views &#183; 2 weeks ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/QrWyUWW_xUo?si=OrNWxzrROIbg_FO6">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/harkirat_ai.avif">
+            <div class="video_time">
+              20:15
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/harkirat.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                I Researched the Job Market after AI
+              </p>
+
+              <p class="channel">
+                Harkirat Singh
+              </p>
+
+              <p class="views">
+                216K views &#183; 5 months ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/tz82ola3oy0?si=wILb0Uk1VZfK3321">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/hitesh_git.avif">
+            <div class="video_time">
+              3:43:17
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/hitesh.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                Complete GIT in 1 video
+              </p>
+
+              <p class="channel">
+                Hitesh Choudhary
+              </p>
+
+              <p class="views">
+                103K views &#183; 1 year ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/F0GQ0l2NfHA?si=fvEA2BIdS1c5WVlc">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/genai.avif">
+            <div class="video_time">
+              21:11:21
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/freecodecamp.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                Generative AI for Developers &ndash; Comprehensive Course
+              </p>
+
+              <p class="channel">
+                freeCodeCamp.org
+              </p>
+
+              <p class="views">
+                495k views &#183; 8 months ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <div class="video_preview">
+
+        <a class="links" href="https://youtu.be/lFeYU31TnQ8?si=IN9Rx_6ZZdSgImaD">
+
+          <div class="thumbnail_row">
+            <img class="thumbnail" src="images/thumbnail_images/system_design.avif">
+            <div class="video_time">
+              47:30
+            </div>
+          </div>
+
+          <div class="video_info_grid">
+
+            <div class="profile_image">
+              <img class="profile" src="images/profile_images/piyush_garg.jpg">
+            </div>
+
+            <div class="video_info">
+
+              <p class="name">
+                System Design for Beginners
+              </p>
+
+              <p class="channel">
+                Piyush Garg
+              </p>
+
+              <p class="views">
+                168k views &#183; 1 month ago
+              </p>
+
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+
+</html>

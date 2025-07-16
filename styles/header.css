@@ -1,0 +1,235 @@
+.header{
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(15 15 15);
+  z-index: 100;
+}
+
+.left_section{
+  display: flex;
+  align-items: center;
+}
+
+.menu{
+  height: 20px;
+}
+
+.menu_div{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius:50% ;
+  padding:8px;
+  margin-right: 21px;
+  margin-left:27px;
+  transition: background-color 0.15s
+}
+
+.notification_div:hover,
+.menu_div:hover{
+  background-color: rgb(39, 39, 39);
+}
+
+.youtube_logo_div{
+  position: relative;
+  display: inline-block;
+  cursor:pointer;
+}
+
+.yt_location{
+  font-size: 10px;
+  font-weight: bold;
+  color:rgb(150,150,150);
+  line-height: 1;
+  position: absolute;
+  top:-4px;
+  right: -15px;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+.youtube_logo{
+  height: 22px;
+  display: block;
+}
+
+.middle_section{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+}
+
+.search_bar{
+  flex:1;
+  height: 38px;
+  padding-left: 16px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(48, 48, 48);
+  background-color: rgb(18, 18, 18);
+  color: rgb(255, 255, 255);
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  width: 0;
+  transition: border-color 0.15s;
+}
+
+.search_bar:focus{
+  outline:none;
+  border-color: rgb(28, 98, 185);
+}
+
+
+.search_bar::placeholder{
+  font-family:'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.search_button{
+  height: 42px;
+  width: 64px;
+  background-color: rgb(39, 39, 39);
+  border: 1px solid rgb(48, 48, 48);
+  margin-left: 0px;
+  border-left:none;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin-right: 16px;
+  cursor:pointer;
+}
+
+.search_button,.mic_button,.notification_div{
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_button .tooltip,
+.mic_button .tooltip,
+.notification_div .tooltip{
+  position:absolute;
+  background-color: rgb(100,100,100);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  bottom:-40px;
+  opacity:0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.search_button:hover .tooltip,
+.mic_button:hover .tooltip,
+.notification_div:hover .tooltip{
+  opacity: .9;
+}
+
+.search_img{
+  height: 22px;
+}
+
+.mic_button{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color:rgb(39, 39, 39) ;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.mic_button:hover{
+  background-color: rgb(65,65,65);
+}
+
+.mic_img{
+  height: 24px;
+}
+
+.right_section{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.create_button{
+  height: 36px;
+  width: 97px;
+  background-color:rgb(39, 39, 39);
+  border: none;
+  border-radius: 18px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  cursor:pointer;
+  transition:background-color 0.15s;
+}
+
+.create_button:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+.create_img{
+  width: 22px;
+  height: 22px;
+  margin-left: 5px;
+}
+
+.create_text{
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 6px;
+  
+}
+
+.notification_img{
+  height: 24px;
+}
+
+.notification_div{
+  position: relative;
+  border-radius:50px;
+  padding: 8px;
+  cursor:pointer;
+  transition: background-color 0.15s;
+}
+
+.notifications_count{
+  position: absolute;
+  top: 3px;
+  right: -3px;
+  background-color: rgb(225, 0, 45);
+  color: rgb(255,255,255);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 4px;
+  line-height: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+
+.shafin_img{
+  height: 32px;
+  border-radius: 50%;
+  cursor:pointer;
+}

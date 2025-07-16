@@ -1,0 +1,45 @@
+.filter_bar{
+  display: flex;
+  align-items: center;
+  padding: 12px 24px 24px 24px;
+  overflow-x: auto;
+  gap: 12px;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: fixed;
+  z-index: 99;
+  top: 55px;
+  left: 230px;
+  right: 0;
+  background-color: rgb(15,15,15);
+}
+
+
+
+.filter_bar::-webkit-scrollbar{
+  display:none;
+}
+
+.filter_all{
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.filter{
+  background-color: rgb(39,39,39);
+  color: white;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style:solid;
+  border-color: rgb(39,39,39);
+  font-weight: 500;
+}
